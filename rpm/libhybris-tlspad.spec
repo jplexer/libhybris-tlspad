@@ -25,4 +25,4 @@ echo %{_libdir}/libhybris-tlspad.so > %{buildroot}%{_sysconfdir}/ld.so.preload
 
 %files
 %{_libdir}/libhybris-tlspad.so
-%config %{_sysconfdir}/ld.so.preload
+%config(noreplace) %{_sysconfdir}/ld.so.preload
